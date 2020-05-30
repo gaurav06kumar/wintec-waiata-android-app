@@ -3,16 +3,21 @@ package com.example.comp709c3;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.comp709c3.Adapter.GridOfCharAdapter;
+import com.example.comp709c3.Adapter.ListOfCharAdapter;
 import com.example.comp709c3.Model.WaiataModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -20,8 +25,10 @@ import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
+
+
     Button btn;
-    TextView text;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,14 +40,29 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
+        btn = findViewById(R.id.swapBtn);
 
 
-
-
-
-
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                name = btn.getText().toString();
+                swapView();
+            }
+        });
 
     }
+
+    public void swapView(){
+        if (name.toString().equals("Grid")){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+            btn.setText("List");
+        }else if(name.toString().equals("List")){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeListFragment()).commit();
+            btn.setText("Grid");
+        }
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
