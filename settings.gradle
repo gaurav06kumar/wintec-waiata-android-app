@@ -1,0 +1,2 @@
+rootProject.name='COMP709C3'
+include ':app'
