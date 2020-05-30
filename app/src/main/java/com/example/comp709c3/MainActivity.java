@@ -3,6 +3,7 @@ package com.example.comp709c3;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.Menu;
@@ -11,11 +12,14 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.comp709c3.Model.WaiataModel;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {
-
     Button btn;
     TextView text;
     @Override
@@ -28,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+
+
+
+
+
+
+
+
     }
 
     @Override
@@ -40,9 +52,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.item1:
-                Toast.makeText(this, "item 1 selected", Toast.LENGTH_SHORT).show();
-                return true;
+
             case R.id.item2:
                 Toast.makeText(this, "item 2 selected", Toast.LENGTH_SHORT).show();
                 return true;
@@ -64,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new HomeFragment();
                             break;
                         case R.id.nav_marae:
-                            selectedFragment = new HomeFragment();
+                            selectedFragment = new MaraeFragment();
                             break;
                     }
 
