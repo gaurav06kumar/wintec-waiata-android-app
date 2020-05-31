@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.comp709c3.DetailActivity;
 import com.example.comp709c3.Model.WaiataModel;
 import com.example.comp709c3.R;
 
@@ -44,14 +45,14 @@ public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.My
             @Override
             //passing the value on the onclick functionality
             public void onClick(View v){
-//                Intent intent = new Intent(v.getContext(), CharView.class);
+                Intent intent = new Intent(v.getContext(), DetailActivity.class);
 //
 //                intent.putExtra("image", charModel.getImage());
-//                intent.putExtra("name", charModel.getName());
+                intent.putExtra("name", charModel.getName());
 //                intent.putExtra("Desc", charModel.getDescription());
 //                intent.putExtra("Abilites", charModel.getAbilities());
 //                intent.putExtra("Combo", charModel.getCombo());
-//                v.getContext().startActivity(intent);
+                v.getContext().startActivity(intent);
             }
         });
     }

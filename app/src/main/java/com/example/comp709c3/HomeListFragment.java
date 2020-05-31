@@ -33,10 +33,10 @@ public class HomeListFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_home_list_fragment, container, false);
 
         //store the value in the form of array
-        WaiataModel charModel0 = new WaiataModel(R.drawable.zeus_icon, "zeus", "Zeus, the Lord of Heaven, is a ranged intelligence hero who functions almost solely as a nuker. He is usually played as a semi-carry ganker type hero, who instead of utilizing disables, focuses solely on delivering tremendous amounts of magical damage to his foes.", "Electric Shock","Attack + defence"  );
+        WaiataModel charModel0 = new WaiataModel(1,R.drawable.zeus_icon, "zeus", "Zeus, the Lord of Heaven, is a ranged intelligence hero who functions almost solely as a nuker. He is usually played as a semi-carry ganker type hero, who instead of utilizing disables, focuses solely on delivering tremendous amounts of magical damage to his foes.", "Electric Shock","Attack + defence",R.raw.ekorekoe_1  );
         charList.add(charModel0);
 
-        WaiataModel charModel1 = new WaiataModel(R.drawable.doom_icon, "Doom", "Lucifer, the Doom, is a melee strength hero with strong farming capabilities, good versatility, and one of the strongest single-target disables in the game. His very low starting armor makes him vulnerable to harassment, but his abilities and high health allow him to lane or even jungle quite effectively.", "Fire","Attack + defence + Carry" );
+        WaiataModel charModel1 = new WaiataModel(2,R.drawable.doom_icon, "Doom", "Lucifer, the Doom, is a melee strength hero with strong farming capabilities, good versatility, and one of the strongest single-target disables in the game. His very low starting armor makes him vulnerable to harassment, but his abilities and high health allow him to lane or even jungle quite effectively.", "Fire","Attack + defence + Carry",R.raw.ekorekoe_2 );
         charList.add(charModel1);
         gridOfCharAdapter = new GridOfCharAdapter(charList);
         listOfCharAdapter = new ListOfCharAdapter(charList);
