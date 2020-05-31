@@ -94,9 +94,11 @@ public class MainActivity extends AppCompatActivity {
                     switch (menuItem.getItemId()){
                         case R.id.nav_home:
                             selectedFragment = new HomeFragment();
+                            btn.setVisibility(View.VISIBLE);
                             break;
                         case R.id.nav_marae:
                             selectedFragment = new MaraeFragment();
+                            btn.setVisibility(View.GONE);
                             break;
                     }
 
