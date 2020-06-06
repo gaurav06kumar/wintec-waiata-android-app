@@ -95,12 +95,12 @@ public class WaiataActivity extends AppCompatActivity {
 
     public void swapView(MenuItem item){
         if(gridLayoutManager.getSpanCount() == span_count_2)
-        if(swapView == true){
-            swapView = false;
+        {
             item.setIcon(R.drawable.ic_grid);
-        }else if (swapView == false){
-            swapView = true;
+            gridLayoutManager.setSpanCount(span_count_1);
+        }else if(gridLayoutManager.getSpanCount()==span_count_1){
             item.setIcon(R.drawable.ic_list);
+            gridLayoutManager.setSpanCount(span_count_2);
         }
 
     }
