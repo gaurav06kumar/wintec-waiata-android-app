@@ -54,9 +54,10 @@ public class WaiataDetailActivity extends AppCompatActivity {
             case 16908332://back
                 finish();
                 return true;
-            case R.id.item2:
+            case R.id.itemhome:
+                finish();
                 return true;
-            case R.id.item3:
+            case R.id.itemaboutus:
                 Intent intent = new Intent(this, AboutUsActivity.class);
                 startActivity(intent);
                 return true;

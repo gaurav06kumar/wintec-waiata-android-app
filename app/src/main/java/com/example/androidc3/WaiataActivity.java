@@ -25,6 +25,8 @@ import com.example.androidc3.Model.WaiataModel;
 
 import java.util.ArrayList;
 
+import static maes.tech.intentanim.CustomIntent.customType;
+
 public class WaiataActivity extends AppCompatActivity {
     private ArrayList<WaiataModel> charList = new ArrayList<>();
     private GridOfCharAdapter gridOfCharAdapter;
@@ -33,6 +35,7 @@ public class WaiataActivity extends AppCompatActivity {
     private GridLayoutManager gridLayoutManager;
     Boolean swapView;
     private int span_count_1 = 1, span_count_2 = 2;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +69,7 @@ public class WaiataActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.example_topmenu, menu);
-
+        menu.removeItem(R.id.itemhome);
         return true;
     }
 
@@ -74,18 +77,15 @@ public class WaiataActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case 16908332://back
-                finish();
-                return true;
-            case R.id.up:
-                swapView(item);
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                customType(this,"right-to-left");
                 return true;
             case R.id.itemlist:
                 swapView(item);
                 return true;
-            case R.id.item2:
-                return true;
-            case R.id.item3:
-                Intent intent = new Intent(this, AboutUsActivity.class);
+            case R.id.itemaboutus:
+                intent = new Intent(this, AboutUsActivity.class);
                 startActivity(intent);
                 return true;
             default:
