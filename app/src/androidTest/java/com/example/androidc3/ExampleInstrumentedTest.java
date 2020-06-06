@@ -1,4 +1,4 @@
-package com.example.comp709c3;
+package com.example.androidc3;
 
 import android.content.Context;
 
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 import static org.junit.Assert.*;
 
 /**
- * Instrumented grid, which will execute on an Android device.
+ * Instrumented test, which will execute on an Android device.
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
@@ -19,9 +19,8 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
-        // Context of the app under grid.
+        // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-
-        assertEquals("com.example.comp709c3", appContext.getPackageName());
+        assertEquals("com.example.androidc3", appContext.getPackageName());
     }
 }
