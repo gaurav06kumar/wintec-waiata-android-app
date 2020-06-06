@@ -1,4 +1,4 @@
-package com.example.comp709c3.Adapter;
+package com.example.androidc3.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -7,15 +7,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.comp709c3.DetailActivity;
-import com.example.comp709c3.Model.WaiataModel;
-import com.example.comp709c3.R;
+import com.example.androidc3.Model.WaiataModel;
+import com.example.androidc3.R;
+import com.example.androidc3.WaiataDetailActivity;
 
 import java.util.ArrayList;
-import maes.tech.intentanim.CustomIntent;
+
+//import com.example.info706c3.DetailActivity;
+
+//import maes.tech.intentanim.CustomIntent;
 
 public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.MyViewHolder> {
 
@@ -46,7 +50,7 @@ public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.My
             @Override
             //passing the value on the onclick functionality
             public void onClick(View v){
-                Intent intent = new Intent(v.getContext(), DetailActivity.class);
+                Intent intent = new Intent(v.getContext(), WaiataDetailActivity.class);
 //
                 intent.putExtra("image", charModel.getImage());
                 intent.putExtra("name", charModel.getName());
@@ -54,7 +58,7 @@ public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.My
 //                intent.putExtra("Abilites", charModel.getAbilities());
 //                intent.putExtra("Combo", charModel.getCombo());
                 v.getContext().startActivity(intent);
-                CustomIntent.customType(v.getContext(), "left-to-right");
+//                CustomIntent.customType(v.getContext(), "left-to-right");
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.example.comp709c3.Model;
+package com.example.androidc3.Model;
 
 public class WaiataModel {
     private int id;
