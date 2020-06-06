@@ -3,6 +3,7 @@ package com.example.androidc3;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -35,6 +37,10 @@ public class WaiataActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waiata);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle("Waiata");
 
         swapView = true;
 
@@ -54,15 +60,6 @@ public class WaiataActivity extends AppCompatActivity {
         charRecyclerview.setItemAnimator(new DefaultItemAnimator());
         charRecyclerview.setAdapter(gridOfCharAdapter);
 
-        //Toolbar
-//        Toolbar toolbarList = findViewById(R.id.toolbarList);
-//        toolbarList.setNavigationOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                finish();
-////                CustomIntent.customType(view.getContext(), "right-to-left");
-//            }
-//        });
     }
 
     @Override
@@ -76,15 +73,18 @@ public class WaiataActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+            case 16908332://back
+                finish();
+                return true;
+            case R.id.up:
+                swapView(item);
+                return true;
             case R.id.itemlist:
-                Toast.makeText(this, "item list selected", Toast.LENGTH_SHORT).show();
                 swapView(item);
                 return true;
             case R.id.item2:
-                Toast.makeText(this, "item 2 selected", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.item3:
-                Toast.makeText(this, "item 3 selected", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, AboutUsActivity.class);
                 startActivity(intent);
                 return true;
