@@ -28,7 +28,9 @@ public class WaiataActivity extends AppCompatActivity {
     private GridOfCharAdapter gridOfCharAdapter;
     private RecyclerView charRecyclerview;
     private Toolbar toolbar;
+    private GridLayoutManager gridLayoutManager;
     Boolean swapView;
+    private int span_count_1 = 1, span_count_2 = 2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,8 @@ public class WaiataActivity extends AppCompatActivity {
         charRecyclerview = findViewById(R.id.recyclerview);
 
         //        for grid
-        charRecyclerview.setLayoutManager(new GridLayoutManager(this, 1));
+        gridLayoutManager = new GridLayoutManager(this, span_count_2);
+        charRecyclerview.setLayoutManager(gridLayoutManager);
         charRecyclerview.setItemAnimator(new DefaultItemAnimator());
         charRecyclerview.setAdapter(gridOfCharAdapter);
 
@@ -75,7 +78,7 @@ public class WaiataActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.itemlist:
                 Toast.makeText(this, "item list selected", Toast.LENGTH_SHORT).show();
-                swapView(R.id.itemlist, swapView, item);
+                swapView(item);
                 return true;
             case R.id.item2:
                 Toast.makeText(this, "item 2 selected", Toast.LENGTH_SHORT).show();
@@ -90,7 +93,8 @@ public class WaiataActivity extends AppCompatActivity {
         }
     }
 
-    public void swapView(int id, boolean swapView, MenuItem item){
+    public void swapView(MenuItem item){
+        if(gridLayoutManager.getSpanCount() == span_count_2)
         if(swapView == true){
             swapView = false;
             item.setIcon(R.drawable.ic_grid);
