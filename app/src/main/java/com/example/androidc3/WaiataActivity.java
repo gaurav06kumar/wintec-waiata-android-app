@@ -250,9 +250,54 @@ public class WaiataActivity extends AppCompatActivity {
                         "The song exposes the effects colonization has had on their lives and encourage Wintec to be a pillar by" +
                         "which they and others following can restore what was lost.\n\n" +
                         "In this instance, it is the language which is the doorway to their cultural inheritance and well being.",
-                "Fire",
-                "Attack + defence + Carry", R.raw.itewhare_1 ));
-        charList.add(new WaiataModel(6,R.drawable.puateowhai, "Pua Te Kōwhai", "", "Fire","Attack + defence + Carry", R.raw.puatekowhai_1 ));
+                "I am Māori\n\n" +
+                        "In this cultural house\nThat is within Waikato Institute of Technology\nWe feel the sorrow\n" +
+                        "The tears, The flow\nAnd the love.\n\n" +
+                        "Give bac our cultural inheritance\nNurture the development of my language\n" +
+                        "That awakens my spirit.\n\n" +
+                        "The nothingness has disappeared\nI begin to bloom\nI am Māori\nI am Māori",
+                "He Māori tū tangata\n\n" +
+                        "I te whare whakapiri a Tāne\n" +
+                        "Roto te Kuratini o Waikato\n" +
+                        "Ka puta ngā mamaetanga\n" +
+                        "Rere iho ko ngā roimata\n" +
+                        "Auē, te arohanui\n\n" +
+                        "Homai, homai taku Māoritanga\n" +
+                        "Whāngaihia mai tōku reo tuku iho\n" +
+                        "He kaiwhakaoho i tōku wairua\n\n" +
+                        "Kua ngaro te korekore\n" +
+                        "Puāwai ana ko ahau\n" +
+                        "He Māori tū tangata\n" +
+                        "He Māori tū tangata\n\n", R.raw.itewhare_1 ));
+        charList.add(new WaiataModel(6,R.drawable.puateowhai, "Pua Te Kōwhai",
+                "This waiata is suitable for any occasion and is still used both in and out of Wintec. The song jumps" +
+                        "around as it follows the flight path of the Tui.\n\n" +
+                        "Historically, the hill that Wintec sits on was part of the lands designated 'mara' or gardening land, thus," +
+                        "the name Te Kōpū Mānia o Kirikiriroa - The Smooth Bellly (fertile lands) of Kirikiriroa (known persently" +
+                        "as Hamilton).\n\n" +
+                        "Waikato-Tainui, Ngāti Hauā and Ngāti Wairere are the mana whenua (known affiliated tribes) of this land.",
+                "The kōwhai blooms\n" +
+                        "Bursts open in readiness for plucking\n" +
+                        "A sign of Spring\n" +
+                        "The Tui begin to assemble\n" +
+                        "To nibble to gather\n" +
+                        "For life and well-being\n" +
+                        "The stain of the kōwhai touches\n" +
+                        "While Tui get drunk on the nectar of God\n" +
+                        "Flittering away, returning\n" +
+                        "A display of yello\n" +
+                        "As the sun shines\n\n",
+                "Pua te kōwhai\n" +
+                        "Ngawhā te kōrari\n" +
+                        "He tohu kōanga\n" +
+                        "Tau mai e Tui ki tō kāpunipuni\n" +
+                        "Honihoni, kohikohi\n" +
+                        "Hei oranga, hei rongoā\n" +
+                        "Pania te kiri ki te kōwhai kura\n" +
+                        "E Tui haurangi i te tākoha o te Atua\n" +
+                        "Rere atu, hoki mai\n" +
+                        "Parea te ua kōwhai\n" +
+                        "Ka whiti mai te rā e", R.raw.puatekowhai_1 ));
 
         gridOfCharAdapter = new GridOfCharAdapter(charList);
         listOfCharAdapter = new ListOfCharAdapter(charList);
