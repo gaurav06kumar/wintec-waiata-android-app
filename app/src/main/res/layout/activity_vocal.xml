@@ -28,9 +28,10 @@
         android:layout_below="@+id/frame1"/>
     <ScrollView
         android:layout_marginTop="10dp"
+        android:layout_above="@id/btnlyrics"
         android:layout_below="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="410dp">
+        android:layout_height="wrap_content">
     <TextView
         android:layout_marginTop="20dp"
         android:gravity="center"

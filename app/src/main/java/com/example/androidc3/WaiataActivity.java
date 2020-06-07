@@ -54,7 +54,7 @@ public class WaiataActivity extends AppCompatActivity {
                 "It references names and stories associated with our marae, including the wharenui 'Te Kākano a te kaahu', " +
                 "the interior carving 'Tāwhaki', the large memorial pillar dedicated to the late Māori Queen 'Te Atairangikaahu', " +
                 "and the three buildings which represent 'Ngā Kete Wānanga', the three baskets of knowledge.\n\n" +
-                "When performing this waiata, the last line 'E ko Te Kuratini o Waikato' may also be sung at the beginning as an intro, and also repeated at the end.",
+                "When performing this waiata, the last line 'E ko Te Kuratini o Waikato' may also be sung at the beginning as an intro, and also repeated at the end.\n\n\n",
                 "To Waikato Institute of Technology\n\n" +
                         "You are not lost, seed of heaven\n" +
                         "Kākano a te kāhu stand tall\n" +
@@ -67,7 +67,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "Tāwhaki ascend, prepare the house\n" +
                         "For the three baskets of knowledge\n" +
                         "Bind them, fasten them\n" +
-                        "To Waikato Institute of Technology",
+                        "To Waikato Institute of Technology\n\n\n",
                 "E ko Te Kuratini o Waikato e\n\nE kore koe e ngaro he kākano i ruia\n" +
                 "Kākano a te Kaahu e tū nei e\n" +
                 "Te Kōpū Mānia, te ngāwhā whakatupu\n" +
@@ -77,12 +77,12 @@ public class WaiataActivity extends AppCompatActivity {
                 "Ko Kīngi Tūheitia ki te whenua e\n\nPiki ake Tāwhaki, tāhūhū matapū\n" +
                 "Ngā kete wānanga e toru e\n" +
                 "Whītikitia rā, ka turuturu iho\n" +
-                "E ko Te Kuratini o Waikato e.", R.raw.ekorekoe_1 ));
+                "E ko Te Kuratini o Waikato e.\n\n\n", R.raw.ekorekoe_1 ));
         charList.add(new WaiataModel(2,R.drawable.hemaimaiarohanatawhiao, "He Maimai Aroha nā Tāwhiao",
                 "After the devastation of the Waikato raupatu or land confiscations of 1863, Kingi Tāwhiao sought refuge in Maniapoto" +
                         "or the King Country. After nearly two decades, in the early 1880s he made an emotional return to Waikato.\n\n" +
                         "This lament express his deeply felt sorrow for the land and its meaning to him. It includes in the lyrics the name of our" +
-                        "marae, Te Kōpū Mānia o Kirikiriroa.",
+                        "marae, Te Kōpū Mānia o Kirikiriroa.\n\n\n",
                 "I look down on the valley of Waikato,\n" +
                         "As though to hold it in the hollow of my hand\n" +
                         "And caress its beauty\n" +
@@ -104,7 +104,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "And look through the thighs of\n" +
                         "Taupiri\n\n" +
                         "There at the place of all creation\n" +
-                        "Let the King come forth.",
+                        "Let the King come forth.\n\n\n",
                 "Ka mātakitaki iho au ki te riu o Waikato\n" +
                         "Anō nei hei kapo kau ake māku\n" +
                         "Ki te kapu o taku ringa,\n" +
@@ -132,19 +132,19 @@ public class WaiataActivity extends AppCompatActivity {
                         "O Taupiri.\n\n" +
                         "Kei reira rā, kei te oroko hanganga o te tangata\n" +
                         "Wāhia te tungaroa o te whare,\n" +
-                        "Te whakaputanga mō te Kīngi.", R.raw.hemaimaiaroha_1 ));
+                        "Te whakaputanga mō te Kīngi.\n\n\n", R.raw.hemaimaiaroha_1 ));
         charList.add(new WaiataModel(3,R.drawable.waikatoteawa, "Waikato Te Awa",
                 "Mr Harrison, the author of this poem, writes that 'When working on the different hydro works on the Waikato River, " +
                         "I spent quite a few hours of leisure, marvelling at the greatness of the dams and lakes formed on this waterway. " +
                         "So, in my spare time i made up this poetry about the Waikato River'.\n\n" +
                         "This was published in the historical Te Ao Hou magazine in June 1962, issue 29. Over the years, there have been slight adjustments" +
-                        "to the poem to suit the context of todays's communities. Wintec only sings the first three verses.",
+                        "to the poem to suit the context of todays's communities. Wintec only sings the first three verses.\n\n\n",
                 "Waikato te awa\nDip in the water\nAs it surges at the mouth\nWaikato is the river\n" +
                         "At every bend there lives\n A chief.\n\n" +
                         "Be careful lest you capsize\nFor the currents are strong\nin the Waikato\n" +
                         "Fix your gaze on the distance\nWhere Taupiri is the mountain\nAnd Pōtatau the man.\n\n" +
                         "Paddle your canoe to Ngāruawāhia\nTo Tūrangawaewae\n" +
-                        "The heart of the kingdom\nWhere Matutaera finished his lament\nAlas, let me grieve also.",
+                        "The heart of the kingdom\nWhere Matutaera finished his lament\nAlas, let me grieve also.\n\n\n",
                 "Waikato te awa\n" +
                         "Katohia, katohia he wai māu\n" +
                         "Katohia he wai māu\n" +
@@ -160,11 +160,11 @@ public class WaiataActivity extends AppCompatActivity {
                         "E hoe tō waka ki Ngāruawāhia\n" +
                         "Tūrangawaewae mō te ao katoa\n" +
                         "Te tongi whakamutunga a Matutaera\n" +
-                        "Auē hoki auē", R.raw.waikatoteawa_1 ));
+                        "Auē hoki auē\n\n\n", R.raw.waikatoteawa_1 ));
         charList.add(new WaiataModel(4,R.drawable.tutiramaingaiwi, "Tūtira mai ngā iwi",
                 "Wi Huata wrote this song and taught it to this children whilst on a family gathering to lake Tutira, north of Napier.\n\n" +
                         "He was explaing how the iwi came together here to support each other.\n\n" +
-                        "Later he used this song to promote Moral Re-armament, uniting different cultures.",
+                        "Later he used this song to promote Moral Re-armament, uniting different cultures.\n\n\n",
                 "Line up together, people\n" +
                         "All of us, all of us. \n" +
                         "Stand in rows, people \n" +
@@ -184,7 +184,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "And stay united. \n" +
                         "All of us, all of us.\n\n" +
                         "All of us, all of us\n" +
-                        "Hi aue hei",
+                        "Hi aue hei\n\n\n",
                 "Tūtira mai ngā iwi\n" +
                         "Tātou tātou e\n" +
                         "Tūtira mai ngā iwi\n" +
@@ -204,12 +204,12 @@ public class WaiataActivity extends AppCompatActivity {
                         "Kia kotahi rā.\n" +
                         "Tātou tātou e.\n\n" +
                         "Tātou, tātou E\n" +
-                        "Hi aue hei" +
+                        "Hi aue hei\n\n\n" +
                         "", R.raw.tutiramainga_1 ));
         charList.add(new WaiataModel(5,R.drawable.pupuketehihiri, "Pupuke Te Hihiri",
                 "Nā Nganehu Turner ngā kupu, nā Tania Oxenham te rangi © 2004 Nganehu Turner (Ngāti Maniapoto) held the position of pouako (tutor) " +
                         "of Te Reo Māori and kuia at Wintec for manny years.\n\n" +
-                        "This was one of the songs she dedicated to the Māori students of Wintec, all who hoped to see their aspirations fulfilled.",
+                        "This was one of the songs she dedicated to the Māori students of Wintec, all who hoped to see their aspirations fulfilled.\n\n\n",
                 "Ascend Son, Daughter\n To the pinnacle of Wintec\n Hold fast to quality principles\n" +
                         "That reflect your successes\n" +
                         "Ascend Son, Daughter\n To the pinnacle of Wintec\n Hold fast to quality principles\n" +
@@ -225,7 +225,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "From conception the increase\n From increase the thought\n" +
                         "From throught the knowledge out of Chaos\n" +
                         "From conception the increase\n From increase the thought\n" +
-                        "From throught the knowledge out of Chaos\n\n" ,
+                        "From throught the knowledge out of Chaos\n\n\n" ,
                 "Piki ake e tama e Hine\n" +
                         "I te ahurei o te Kuratini o Waikato\n" +
                         "He mātāpono whakaū kounga\n" +
@@ -249,18 +249,18 @@ public class WaiataActivity extends AppCompatActivity {
                         "Pupuke te wānanga a te Kore\n" +
                         "Pupuke te hihiri\n" +
                         "Pupuke te mahara\n" +
-                        "Pupuke te wānanga a te Kore", R.raw.pupuketehihiri_1 ));
+                        "Pupuke te wānanga a te Kore\n\n\n", R.raw.pupuketehihiri_1 ));
         charList.add(new WaiataModel(6,R.drawable.itewharewhaapiri, "I Te Whare Whakapiri",
                 "This waiata was written by past Wintec students who came to Wintec to learn Te Reo Māori.\n\n" +
                         "The song exposes the effects colonization has had on their lives and encourage Wintec to be a pillar by" +
                         "which they and others following can restore what was lost.\n\n" +
-                        "In this instance, it is the language which is the doorway to their cultural inheritance and well being.",
+                        "In this instance, it is the language which is the doorway to their cultural inheritance and well being.\n\n\n",
                 "I am Māori\n\n" +
                         "In this cultural house\nThat is within Waikato Institute of Technology\nWe feel the sorrow\n" +
                         "The tears, The flow\nAnd the love.\n\n" +
                         "Give bac our cultural inheritance\nNurture the development of my language\n" +
                         "That awakens my spirit.\n\n" +
-                        "The nothingness has disappeared\nI begin to bloom\nI am Māori\nI am Māori",
+                        "The nothingness has disappeared\nI begin to bloom\nI am Māori\nI am Māori\n\n\n",
                 "He Māori tū tangata\n\n" +
                         "I te whare whakapiri a Tāne\n" +
                         "Roto te Kuratini o Waikato\n" +
@@ -273,14 +273,14 @@ public class WaiataActivity extends AppCompatActivity {
                         "Kua ngaro te korekore\n" +
                         "Puāwai ana ko ahau\n" +
                         "He Māori tū tangata\n" +
-                        "He Māori tū tangata\n\n", R.raw.itewhare_1 ));
+                        "He Māori tū tangata\n\n\n", R.raw.itewhare_1 ));
         charList.add(new WaiataModel(6,R.drawable.puateowhai, "Pua Te Kōwhai",
                 "This waiata is suitable for any occasion and is still used both in and out of Wintec. The song jumps" +
                         "around as it follows the flight path of the Tui.\n\n" +
                         "Historically, the hill that Wintec sits on was part of the lands designated 'mara' or gardening land, thus," +
                         "the name Te Kōpū Mānia o Kirikiriroa - The Smooth Bellly (fertile lands) of Kirikiriroa (known persently" +
                         "as Hamilton).\n\n" +
-                        "Waikato-Tainui, Ngāti Hauā and Ngāti Wairere are the mana whenua (known affiliated tribes) of this land.",
+                        "Waikato-Tainui, Ngāti Hauā and Ngāti Wairere are the mana whenua (known affiliated tribes) of this land.\n\n\n",
                 "The kōwhai blooms\n" +
                         "Bursts open in readiness for plucking\n" +
                         "A sign of Spring\n" +
@@ -291,7 +291,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "While Tui get drunk on the nectar of God\n" +
                         "Flittering away, returning\n" +
                         "A display of yello\n" +
-                        "As the sun shines\n\n",
+                        "As the sun shines\n\n\n",
                 "Pua te kōwhai\n" +
                         "Ngawhā te kōrari\n" +
                         "He tohu kōanga\n" +
@@ -302,7 +302,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "E Tui haurangi i te tākoha o te Atua\n" +
                         "Rere atu, hoki mai\n" +
                         "Parea te ua kōwhai\n" +
-                        "Ka whiti mai te rā e", R.raw.puatekowhai_1 ));
+                        "Ka whiti mai te rā e\n\n\n", R.raw.puatekowhai_1 ));
 
         gridOfCharAdapter = new GridOfCharAdapter(charList);
         listOfCharAdapter = new ListOfCharAdapter(charList);

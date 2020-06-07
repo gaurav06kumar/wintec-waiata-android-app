@@ -17,6 +17,11 @@
         android:textSize="25sp"
         android:layout_below="@+id/frame1"/>
 
+    <ScrollView
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/btnlyrics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:layout_marginTop="20dp"
         android:gravity="center"
@@ -26,7 +31,9 @@
         android:textColor="@color/colorBlack"
         android:text="Detail :"
         android:textSize="15sp"
+
         android:layout_below="@+id/textView"/>
+    </ScrollView>
     <Button
         android:id="@+id/btnlyrics"
         android:layout_alignParentBottom="true"

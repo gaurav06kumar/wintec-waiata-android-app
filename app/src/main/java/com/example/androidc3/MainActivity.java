@@ -31,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 openWaiata();
             }
         });
+
+        cardMarae.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openMarae();
+            }
+        });
     }
     @Override
     public void onBackPressed() {
@@ -47,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openWaiata(){
         Intent intent = new Intent(this, WaiataActivity.class);
+        startActivity(intent);
+    }
+
+    public void openMarae(){
+        Intent intent = new Intent(this, MaraeActivity.class);
         startActivity(intent);
     }
 }
