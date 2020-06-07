@@ -246,7 +246,10 @@ public class WaiataActivity extends AppCompatActivity {
                         "Pupuke te mahara\n" +
                         "Pupuke te wānanga a te Kore", R.raw.pupuketehihiri_1 ));
         charList.add(new WaiataModel(6,R.drawable.itewharewhaapiri, "I Te Whare Whakapiri",
-                "",
+                "This waiata was written by past Wintec students who came to Wintec to learn Te Reo Māori.\n\n" +
+                        "The song exposes the effects colonization has had on their lives and encourage Wintec to be a pillar by" +
+                        "which they and others following can restore what was lost.\n\n" +
+                        "In this instance, it is the language which is the doorway to their cultural inheritance and well being.",
                 "Fire",
                 "Attack + defence + Carry", R.raw.itewhare_1 ));
         charList.add(new WaiataModel(6,R.drawable.puateowhai, "Pua Te Kōwhai", "", "Fire","Attack + defence + Carry", R.raw.puatekowhai_1 ));
