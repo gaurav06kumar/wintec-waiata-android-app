@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SWINFO</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="Disclaimer"> <u>  Disclaimer   wefjh wejf <br>  vnsjvhjehj</br>  </u></string>
+
+
+
+
 </resources>
