@@ -22,19 +22,19 @@ import java.util.ArrayList;
 
 //import maes.tech.intentanim.CustomIntent;
 
-public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.MyViewHolder> {
+public class ListOfCharAdapter extends RecyclerView.Adapter<ListOfCharAdapter.MyViewHolder> {
 
     ArrayList<WaiataModel> CharList;
     String name;
 
-    public GridOfCharAdapter(ArrayList<WaiataModel> CharList) {
+    public ListOfCharAdapter(ArrayList<WaiataModel> CharList) {
         this.CharList = CharList;
     }
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.grid, parent, false);
+                .inflate(R.layout.list, parent, false);
         return new MyViewHolder(itemView);
     }
 
@@ -75,7 +75,6 @@ public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.My
     class MyViewHolder extends RecyclerView.ViewHolder {
         TextView txt_char;
         ImageView img_char;
-
 
         MyViewHolder(View view) {
             super(view);

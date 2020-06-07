@@ -14,12 +14,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+
+import static maes.tech.intentanim.CustomIntent.customType;
 
 public class WaiataDetailActivity extends AppCompatActivity {
-    String name;
-    TextView textWaiataDetail;
-    Button btnvocal, btnlyrics, btnnonvocal, btnbrief;
+    String name, description, lyricsmaori, lyricseng;
+    int image, vocal;
     Intent intent;
+    CardView cardBrief, cardVocal, cardLyrics;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,18 +32,66 @@ public class WaiataDetailActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
+        cardBrief = findViewById(R.id.card_brief);
+        cardVocal = findViewById(R.id.card_vocal);
+        cardLyrics = findViewById(R.id.card_lyric);
 
-//        textWaiataDetail = findViewById(R.id.text_waiata_detail);
+        cardBrief.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openBrief();
+            }
+        });
 
-//        btnvocal = findViewById(R.id.btnvocal);
-//        btnlyrics = findViewById(R.id.btnlyrics);
-//        btnnonvocal = findViewById(R.id.btnnonvocal);
+        cardVocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openVocal();
+            }
+        });
+
+        cardLyrics.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openLyrics();
+            }
+        });
 
         intent = getIntent();
-
         name = intent.getStringExtra("name");
+        description = intent.getStringExtra("description");
+        lyricsmaori = intent.getStringExtra("lyricsmaori");
+        lyricseng = intent.getStringExtra("lyricseng");
+        image = intent.getIntExtra("image", 0);
+        vocal = intent.getIntExtra("vocal", 0);
         actionBar.setTitle(name);
     }
+
+    public void openBrief(){
+        intent = new Intent(this, BriefActivity.class);
+        intent.putExtra("name", name);
+        intent.putExtra("description", description);
+        intent.putExtra("image", image);
+        startActivity(intent);
+    }
+
+    public void openVocal(){
+        intent = new Intent(this, VocalActivity.class);
+        intent.putExtra("name", name);
+        intent.putExtra("vocal", vocal);
+        intent.putExtra("lyricsmaori", lyricsmaori);
+        intent.putExtra("lyricseng", lyricseng);
+        startActivity(intent);
+    }
+
+    public void openLyrics(){
+        intent = new Intent(this, LyricsActivity.class);
+        intent.putExtra("name", name);
+        intent.putExtra("lyricsmaori", lyricsmaori);
+        intent.putExtra("lyricseng", lyricseng);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -55,10 +106,12 @@ public class WaiataDetailActivity extends AppCompatActivity {
                 finish();
                 return true;
             case R.id.itemhome:
-                finish();
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                customType(this,"right-to-left");
                 return true;
             case R.id.itemaboutus:
-                Intent intent = new Intent(this, AboutUsActivity.class);
+                intent = new Intent(this, AboutUsActivity.class);
                 startActivity(intent);
                 return true;
             default:

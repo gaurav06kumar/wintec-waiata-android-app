@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash"
+        <activity android:name=".LyricsActivity"></activity>
+        <activity android:name=".VocalActivity" />
+        <activity android:name=".BriefActivity" />
+        <activity
+            android:name=".Splash"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>
+        </activity>
         <activity android:name=".AboutUsActivity" />
         <activity android:name=".WaiataDetailActivity" />
         <activity android:name=".WaiataActivity" />
@@ -27,7 +31,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
