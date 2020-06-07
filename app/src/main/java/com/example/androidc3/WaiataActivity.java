@@ -139,7 +139,12 @@ public class WaiataActivity extends AppCompatActivity {
                         "So, in my spare time i made up this poetry about the Waikato River'.\n\n" +
                         "This was published in the historical Te Ao Hou magazine in June 1962, issue 29. Over the years, there have been slight adjustments" +
                         "to the poem to suit the context of todays's communities. Wintec only sings the first three verses.",
-                "Electric Shock",
+                "Waikato te awa\nDip in the water\nAs it surges at the mouth\nWaikato is the river\n" +
+                        "At every bend there lives\n A chief.\n\n" +
+                        "Be careful lest you capsize\nFor the currents are strong\nin the Waikato\n" +
+                        "Fix your gaze on the distance\nWhere Taupiri is the mountain\nAnd Pōtatau the man.\n\n" +
+                        "Paddle your canoe to Ngāruawāhia\nTo Tūrangawaewae\n" +
+                        "The heart of the kingdom\nWhere Matutaera finished his lament\nAlas, let me grieve also.",
                 "Waikato te awa\n" +
                         "Katohia, katohia he wai māu\n" +
                         "Katohia he wai māu\n" +
