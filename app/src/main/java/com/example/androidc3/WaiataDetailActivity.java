@@ -19,7 +19,7 @@ import androidx.cardview.widget.CardView;
 import static maes.tech.intentanim.CustomIntent.customType;
 
 public class WaiataDetailActivity extends AppCompatActivity {
-    String name, description, lyricsmaori, lyricseng;
+    String name, description, lyricsmaori, lyricseng, lyricsurdu;
     int image, vocal;
     Intent intent;
     CardView cardBrief, cardVocal, cardLyrics;
@@ -62,6 +62,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
         description = intent.getStringExtra("description");
         lyricsmaori = intent.getStringExtra("lyricsmaori");
         lyricseng = intent.getStringExtra("lyricseng");
+        lyricsurdu = intent.getStringExtra("lyricsurdu");
         image = intent.getIntExtra("image", 0);
         vocal = intent.getIntExtra("vocal", 0);
         actionBar.setTitle(name);
@@ -81,6 +82,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
         intent.putExtra("vocal", vocal);
         intent.putExtra("lyricsmaori", lyricsmaori);
         intent.putExtra("lyricseng", lyricseng);
+        intent.putExtra("lyricsurdu", lyricsurdu);
         startActivity(intent);
     }
 
@@ -89,6 +91,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
         intent.putExtra("name", name);
         intent.putExtra("lyricsmaori", lyricsmaori);
         intent.putExtra("lyricseng", lyricseng);
+        intent.putExtra("lyricsurdu", lyricsurdu);
         startActivity(intent);
     }
 

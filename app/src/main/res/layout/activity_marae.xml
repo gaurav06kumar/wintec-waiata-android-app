@@ -7,6 +7,7 @@
     tools:context=".MaraeActivity"
     android:orientation="vertical"
     android:background="@color/backgroundcolor">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -167,4 +168,5 @@
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

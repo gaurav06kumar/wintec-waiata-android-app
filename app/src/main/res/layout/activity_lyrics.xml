@@ -35,11 +35,27 @@
         android:layout_below="@+id/textView"/>
     </ScrollView>
     <Button
-        android:id="@+id/btnlyrics"
+        android:id="@+id/btnlyricseng"
         android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="English"
+        android:layout_gravity="bottom"/>
+    <Button
+        android:id="@+id/btnlyricsmaori"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maori"
+        android:layout_gravity="bottom"/>
+    <Button
+        android:id="@+id/btnlyricsurdu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Urdu"
         android:layout_gravity="bottom"/>
 
 </RelativeLayout>

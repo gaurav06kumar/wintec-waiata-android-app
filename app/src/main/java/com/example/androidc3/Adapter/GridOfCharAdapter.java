@@ -59,6 +59,7 @@ public class GridOfCharAdapter extends RecyclerView.Adapter<GridOfCharAdapter.My
                 intent.putExtra("vocal", charModel.getVideo());
                 intent.putExtra("lyricsmaori", charModel.getLyricsmaori());
                 intent.putExtra("lyricseng", charModel.getLyricseng());
+                intent.putExtra("lyricsurdu", charModel.getLyricsurdu());
 //                intent.putExtra("Abilites", charModel.getAbilities());
 //                intent.putExtra("Combo", charModel.getCombo());
                 v.getContext().startActivity(intent);

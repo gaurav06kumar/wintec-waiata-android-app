@@ -17,6 +17,7 @@ import static maes.tech.intentanim.CustomIntent.customType;
 public class MaraeActivity extends AppCompatActivity {
     Intent intent;
     CardView cardMaraeInfo, cardCarving, cardProtocol, cardBooking;
+    Boolean swap = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -85,7 +86,7 @@ public class MaraeActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.example_topmenu, menu);
-        menu.removeItem(R.id.itemlist);
+//        menu.removeItem(R.id.itemlist);
         return true;
     }
 
@@ -102,6 +103,9 @@ public class MaraeActivity extends AppCompatActivity {
                 startActivity(intent);
                 customType(this,"right-to-left");
                 return true;
+            case R.id.itemlist:
+                swap = swapView(item, swap);
+                return true;
             case R.id.itemaboutus:
                 intent = new Intent(this, AboutUsActivity.class);
                 startActivity(intent);
@@ -109,5 +113,16 @@ public class MaraeActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public boolean swapView(MenuItem item, Boolean swap){
+        if(swap == true){
+            swap = false;
+            item.setIcon(R.drawable.ic_grid);
+        }else if(swap == false){
+            swap = true;
+            item.setIcon(R.drawable.ic_list);
+        }
+        return swap;
     }
 }

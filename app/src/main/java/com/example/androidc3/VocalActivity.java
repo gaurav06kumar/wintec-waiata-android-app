@@ -21,7 +21,7 @@ import static maes.tech.intentanim.CustomIntent.customType;
 public class VocalActivity extends AppCompatActivity {
     Intent intent;
     TextView textView, textView1;
-    Button btnLyrics;
+    Button btnLyricseng, btnLyricsmaori, btnLyricsurdu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,9 @@ public class VocalActivity extends AppCompatActivity {
 
         textView = findViewById(R.id.textView);
         textView1 = findViewById(R.id.textView1);
-        btnLyrics = findViewById(R.id.btnlyrics);
+        btnLyricseng = findViewById(R.id.btnlyricseng);
+        btnLyricsmaori = findViewById(R.id.btnlyricsmaori);
+        btnLyricsurdu = findViewById(R.id.btnlyricsurdu);
 
         intent = getIntent();
 
@@ -50,22 +52,35 @@ public class VocalActivity extends AppCompatActivity {
         textView.setText(intent.getStringExtra("name"));
         textView1.setText(intent.getStringExtra("lyricsmaori"));
 
-        btnLyrics.setOnClickListener(new View.OnClickListener() {
+        btnLyricseng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeLyrics();
+                changeLyricseng();
             }
         });
 
+        btnLyricsmaori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeLyricsmaori();
+            }
+        });
+
+        btnLyricsurdu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                changeLyricsurdu();
+            }
+        });
     }
-    public void changeLyrics(){
-        if (btnLyrics.getText().equals("English")){
-            textView1.setText(intent.getStringExtra("lyricseng"));
-            btnLyrics.setText("Maori");
-        }else if (btnLyrics.getText().equals("Maori")){
-            textView1.setText(intent.getStringExtra("lyricsmaori"));
-            btnLyrics.setText("English");
-        }
+    public void changeLyricseng(){
+        textView1.setText(intent.getStringExtra("lyricseng"));
+    }
+    public void changeLyricsmaori(){
+        textView1.setText(intent.getStringExtra("lyricsmaori"));
+    }
+    public void changeLyricsurdu(){
+        textView1.setText(intent.getStringExtra("lyricsurdu"));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

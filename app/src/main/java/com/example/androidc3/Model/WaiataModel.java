@@ -7,16 +7,18 @@ public class WaiataModel {
     private String description;
     private String lyricseng;
     private String lyricsmaori;
+    private String lyricsurdu;
     private int video;
 //getter setter of declared variables
 
-    public WaiataModel(int id, int image, String name, String description, String lyricseng, String lyricsmaori, int video) {
+    public WaiataModel(int id, int image, String name, String description, String lyricseng, String lyricsmaori, String lyricsurdu, int video) {
         this.id = id;
         this.image = image;
         this.name = name;
         this.description = description;
         this.lyricseng= lyricseng;
         this.lyricsmaori = lyricsmaori;
+        this.lyricsurdu = lyricsurdu;
         this.video = video;
     }
 
@@ -51,6 +53,14 @@ public class WaiataModel {
     public void setDescription(String description) {
         this.description = description;
 
+    }
+
+    public String getLyricsurdu() {
+        return lyricsurdu;
+    }
+
+    public void setLyricsurdu(String lyricsurdu) {
+        this.lyricsurdu = lyricsurdu;
     }
 
     public String getLyricseng() {

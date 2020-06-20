@@ -24,14 +24,14 @@ public class ProtocolActivity extends AppCompatActivity {
         actionBar.setTitle("Protocol");
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.example_topmenu, menu);
-        menu.removeItem(R.id.itemlist);
+//        menu.removeItem(R.id.itemlist);
         return true;
     }
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
