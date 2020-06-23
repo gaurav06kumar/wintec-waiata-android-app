@@ -45,7 +45,7 @@ public class AboutUsActivity extends AppCompatActivity {
 
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
-                .setImage(R.drawable.d)
+                .setImage(R.drawable.group)
                 .setDescription("This SWINFO APP is a mobile app that helps people learn Wintec songs and Wintec Marae ")
                 .addItem(Disclaimer)
 
