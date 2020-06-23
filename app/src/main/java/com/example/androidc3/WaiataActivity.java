@@ -93,7 +93,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "چڑھاو، گھر تیار\n" +
                         "علم کی تین ٹوکریوں کے لئے\n" +
                         "ان کو باندھ دو ، ان کو جکڑ دو\n" +
-                        "ویکیاتو انسٹی ٹیوٹ آف ٹکنالوجی کو\n\n\n",R.raw.ekorekoe_1 ));
+                        "ویکیاتو انسٹی ٹیوٹ آف ٹکنالوجی کو\n\n\n",R.raw.ekorekoe_1,R.raw.ekorekoe_3 ));
         charList.add(new WaiataModel(2,R.drawable.hemaimaiarohanatawhiao, "He Maimai Aroha nā Tāwhiao",
                 "After the devastation of the Waikato raupatu or land confiscations of 1863, Kingi Tāwhiao sought refuge in Maniapoto" +
                         "or the King Country. After nearly two decades, in the early 1880s he made an emotional return to Waikato.\n\n" +
@@ -167,7 +167,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "ٹو Tūrangawaewae\n" +
                         "مملکت کا دل\n" +
                         "جہاں Matutaera نے اپنا ماتم ختم کیا\n" +
-                        "افسوس ، مجھے بھی غم کرنے دو\n\n\n", R.raw.hemaimaiaroha_1 ));
+                        "افسوس ، مجھے بھی غم کرنے دو\n\n\n", R.raw.hemaimaiaroha_1,R.raw.hemaimaiaroha_3 ));
         charList.add(new WaiataModel(3,R.drawable.waikatoteawa, "Waikato Te Awa",
                 "Mr Harrison, the author of this poem, writes that 'When working on the different hydro works on the Waikato River, " +
                         "I spent quite a few hours of leisure, marvelling at the greatness of the dams and lakes formed on this waterway. " +
@@ -222,7 +222,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "Taupiri\n" +
                         "\n" +
                         "تمام مخلوقات کی جگہ پر\n" +
-                        "بادشاہ کو سامنے آنے دو۔\n\n\n", R.raw.waikatoteawa_1 ));
+                        "بادشاہ کو سامنے آنے دو۔\n\n\n", R.raw.waikatoteawa_1,R.raw.waikatoteawa_3 ));
         charList.add(new WaiataModel(4,R.drawable.tutiramaingaiwi, "Tūtira mai ngā iwi",
                 "Wi Huata wrote this song and taught it to this children whilst on a family gathering to lake Tutira, north of Napier.\n\n" +
                         "He was explaing how the iwi came together here to support each other.\n\n" +
@@ -287,7 +287,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "ہم سب ، ہم سب\n" +
                         "\n" +
                         "ہم سب ، ہم سب\n" +
-                        "ہیلو آیو ہی\n\n\n", R.raw.tutiramainga_1 ));
+                        "ہیلو آیو ہی\n\n\n", R.raw.tutiramainga_1,R.raw.tutiramainga_3 ));
         charList.add(new WaiataModel(5,R.drawable.pupuketehihiri, "Pupuke Te Hihiri",
                 "Nā Nganehu Turner ngā kupu, nā Tania Oxenham te rangi © 2004 Nganehu Turner (Ngāti Maniapoto) held the position of pouako (tutor) " +
                         "of Te Reo Māori and kuia at Wintec for manny years.\n\n" +
@@ -358,7 +358,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "افکار سے افکار افکار سے\n" +
                         "تصور سے اضافہ\n" +
                         "سوچ میں اضافہ سے\n" +
-                        "افکار سے افکار افکار سے۔\n\n\n", R.raw.pupuketehihiri_1 ));
+                        "افکار سے افکار افکار سے۔\n\n\n", R.raw.pupuketehihiri_1,R.raw.pupuketehihiri_3 ));
         charList.add(new WaiataModel(6,R.drawable.itewharewhaapiri, "I Te Whare Whakapiri",
                 "This waiata was written by past Wintec students who came to Wintec to learn Te Reo Māori.\n\n" +
                         "The song exposes the effects colonization has had on their lives and encourage Wintec to be a pillar by" +
@@ -398,7 +398,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "کچھ بھی مٹ گیا ہے\n" +
                         "میں کھلتا ہوں\n" +
                         "میں ہوں Māori\n" +
-                        "میں ہوں Māori\n\n\n", R.raw.itewhare_1 ));
+                        "میں ہوں Māori\n\n\n", R.raw.itewhare_1,R.raw.itewhare_3 ));
         charList.add(new WaiataModel(6,R.drawable.puateowhai, "Pua Te Kōwhai",
                 "This waiata is suitable for any occasion and is still used both in and out of Wintec. The song jumps" +
                         "around as it follows the flight path of the Tui.\n\n" +
@@ -438,7 +438,7 @@ public class WaiataActivity extends AppCompatActivity {
                         "جبکہ Tui خدا کے امرت پر نشے میں پڑ گئے\n" +
                         "فلٹرنگ ، واپس لوٹنا\n" +
                         "پیلے رنگ کا ایک ڈسپلے\n" +
-                        "جیسے جیسے سورج چمکتا ہے\n\n\n", R.raw.puatekowhai_1 ));
+                        "جیسے جیسے سورج چمکتا ہے\n\n\n", R.raw.puatekowhai_1,R.raw.puatekowhai_3 ));
 
         gridOfCharAdapter = new GridOfCharAdapter(charList);
         listOfCharAdapter = new ListOfCharAdapter(charList);

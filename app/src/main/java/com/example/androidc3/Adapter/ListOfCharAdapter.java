@@ -57,6 +57,7 @@ public class ListOfCharAdapter extends RecyclerView.Adapter<ListOfCharAdapter.My
                 intent.putExtra("name", charModel.getName());
                 intent.putExtra("description", charModel.getDescription());
                 intent.putExtra("vocal", charModel.getVideo());
+                intent.putExtra("nonvocal", charModel.getVideo1());
                 intent.putExtra("lyricsmaori", charModel.getLyricsmaori());
                 intent.putExtra("lyricseng", charModel.getLyricseng());
                 intent.putExtra("lyricsurdu", charModel.getLyricsurdu());

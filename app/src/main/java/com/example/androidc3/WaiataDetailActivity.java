@@ -20,9 +20,9 @@ import static maes.tech.intentanim.CustomIntent.customType;
 
 public class WaiataDetailActivity extends AppCompatActivity {
     String name, description, lyricsmaori, lyricseng, lyricsurdu;
-    int image, vocal;
+    int image, vocal, nonvocal;
     Intent intent;
-    CardView cardBrief, cardVocal, cardLyrics;
+    CardView cardBrief, cardVocal, cardLyrics, cardnonVocal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
         cardBrief = findViewById(R.id.card_brief);
         cardVocal = findViewById(R.id.card_vocal);
         cardLyrics = findViewById(R.id.card_lyric);
+        cardnonVocal = findViewById(R.id.card_nonvocal);
 
         cardBrief.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +58,13 @@ public class WaiataDetailActivity extends AppCompatActivity {
             }
         });
 
+        cardnonVocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                opennonVocal();
+            }
+        });
+
         intent = getIntent();
         name = intent.getStringExtra("name");
         description = intent.getStringExtra("description");
@@ -65,6 +73,8 @@ public class WaiataDetailActivity extends AppCompatActivity {
         lyricsurdu = intent.getStringExtra("lyricsurdu");
         image = intent.getIntExtra("image", 0);
         vocal = intent.getIntExtra("vocal", 0);
+        nonvocal = intent.getIntExtra("nonvocal", 0);
+
         actionBar.setTitle(name);
     }
 
@@ -80,6 +90,16 @@ public class WaiataDetailActivity extends AppCompatActivity {
         intent = new Intent(this, VocalActivity.class);
         intent.putExtra("name", name);
         intent.putExtra("vocal", vocal);
+        intent.putExtra("lyricsmaori", lyricsmaori);
+        intent.putExtra("lyricseng", lyricseng);
+        intent.putExtra("lyricsurdu", lyricsurdu);
+        startActivity(intent);
+    }
+
+    public void opennonVocal(){
+        intent = new Intent(this, nonlyric.class);
+        intent.putExtra("name", name);
+        intent.putExtra("nonvocal", nonvocal);
         intent.putExtra("lyricsmaori", lyricsmaori);
         intent.putExtra("lyricseng", lyricseng);
         intent.putExtra("lyricsurdu", lyricsurdu);
