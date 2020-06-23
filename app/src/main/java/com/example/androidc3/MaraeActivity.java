@@ -16,7 +16,7 @@ import static maes.tech.intentanim.CustomIntent.customType;
 
 public class MaraeActivity extends AppCompatActivity {
     Intent intent;
-    CardView cardMaraeInfo, cardCarving, cardProtocol, cardBooking;
+    CardView cardMaraeInfo, cardCarving;
     Boolean swap = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +25,6 @@ public class MaraeActivity extends AppCompatActivity {
 
         cardMaraeInfo = findViewById(R.id.card_maraeinfo);
         cardCarving = findViewById(R.id.card_carving);
-        cardProtocol = findViewById(R.id.card_protocols);
-        cardBooking = findViewById(R.id.card_booking);
 
         cardMaraeInfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,19 +40,9 @@ public class MaraeActivity extends AppCompatActivity {
             }
         });
 
-        cardProtocol.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openProtocol();
-            }
-        });
 
-        cardBooking.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openBooking();
-            }
-        });
+
+
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
@@ -72,15 +60,9 @@ public class MaraeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openProtocol(){
-        intent = new Intent(this, ProtocolActivity.class);
-        startActivity(intent);
-    }
 
-    public void openBooking(){
-        intent = new Intent(this, BookingActivity.class);
-        startActivity(intent);
-    }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

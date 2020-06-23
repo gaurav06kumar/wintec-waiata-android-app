@@ -15,6 +15,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.github.florent37.expansionpanel.ExpansionLayout;
 import com.github.florent37.expansionpanel.viewgroup.ExpansionLayoutCollection;
@@ -26,6 +27,7 @@ import static maes.tech.intentanim.CustomIntent.customType;
 
 public class CarvingActivity extends AppCompatActivity {
     Intent intent;
+    ImageView image;
     RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class CarvingActivity extends AppCompatActivity {
 
 
         recyclerView = findViewById(R.id.recyclerView);
+        image=findViewById(R.id.image1);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         final RecyclerAdapter adapter = new RecyclerAdapter();
         recyclerView.setAdapter(adapter);
@@ -48,6 +51,7 @@ public class CarvingActivity extends AppCompatActivity {
         for (int i = 0; i < 8; i++) {
             list.add(new Object());
         }
+
         adapter.setItems(list);
 
     }
