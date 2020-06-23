@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -48,6 +49,12 @@ public class CarvingActivity extends AppCompatActivity {
             list.add(new Object());
         }
         adapter.setItems(list);
+
+    }
+    public void more(View view)
+    {
+        Intent link=new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.wintec.ac.nz/about-wintec/m%C4%81ori-and-pasifika/wintec-marae/marae-carvings"));
+        startActivity(link);
 
     }
     public final static class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.RecyclerHolder> {
