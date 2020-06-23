@@ -19,7 +19,7 @@
 
     <ScrollView
         android:layout_below="@+id/textView"
-        android:layout_above="@+id/btnlyrics"
+        android:layout_above="@+id/btnlyricseng"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     <TextView
