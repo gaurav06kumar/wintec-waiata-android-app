@@ -53,8 +53,8 @@ public class AboutUsActivity extends AppCompatActivity {
 
                 .addItem(Te_Whanau)
                 .addGroup("GROUP LEADER - Gaurav")
-                .addGroup("UX/UI DESIGN - Karan,Sudharsan")
-                .addGroup("APP PROGRAMMING - Gaurav,Gautum")
+                .addGroup("UX/UI DESIGN - Karan, Sudharsan")
+                .addGroup("APP PROGRAMMING - Gaurav, Gautam")
                 .addGroup("MULTIMEDIA - Nikunj")
                 .addGroup("DATA COLLECTION - Karan")
 

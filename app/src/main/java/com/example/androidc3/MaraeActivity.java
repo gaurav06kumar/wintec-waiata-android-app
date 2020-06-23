@@ -68,7 +68,7 @@ public class MaraeActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.example_topmenu, menu);
-//        menu.removeItem(R.id.itemlist);
+        menu.removeItem(R.id.itemlist);
         return true;
     }
 
