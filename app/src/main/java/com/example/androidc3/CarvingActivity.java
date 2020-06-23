@@ -80,6 +80,7 @@ public class CarvingActivity extends AppCompatActivity {
         public void onBindViewHolder(RecyclerHolder holder, int position) {
             holder.bind(list.get(position));
 
+
             expansionsCollection.add(holder.getExpansionLayout());
         }
 
