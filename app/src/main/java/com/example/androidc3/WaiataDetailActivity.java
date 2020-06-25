@@ -22,7 +22,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
     String name, description, lyricsmaori, lyricseng, lyricsurdu;
     int image, vocal, nonvocal;
     Intent intent;
-    CardView cardBrief, cardVocal, cardLyrics, cardnonVocal;
+    CardView cardBrief, cardVocal, cardLyrics, cardnonLyrics, cardnonVocal;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +35,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
         cardBrief = findViewById(R.id.card_brief);
         cardVocal = findViewById(R.id.card_vocal);
         cardLyrics = findViewById(R.id.card_lyric);
-        cardnonVocal = findViewById(R.id.card_nonvocal);
+        cardnonLyrics = findViewById(R.id.card_nonlyric);
 
         cardBrief.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,10 +58,10 @@ public class WaiataDetailActivity extends AppCompatActivity {
             }
         });
 
-        cardnonVocal.setOnClickListener(new View.OnClickListener() {
+        cardnonLyrics.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                opennonVocal();
+                opennonLyric();
             }
         });
 
@@ -96,7 +96,7 @@ public class WaiataDetailActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void opennonVocal(){
+    public void opennonLyric(){
         intent = new Intent(this, nonlyric.class);
         intent.putExtra("name", name);
         intent.putExtra("nonvocal", nonvocal);
